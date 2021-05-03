@@ -1,0 +1,49 @@
+notes from gui
+**  campaign manager: needs to remember last loaded campaign file to keep appropriate information / or !!!!-->>load campaign file every open???
+
+**  campaign -- quests -- new quest button needs to popup dialog to add quest to list
+
+**  need to make sure file formats each area saves are congruent with pcgen file format where they coincide
+
+** can only have one campaign file loaded at once -- maybe add functionality for more than one campaign open at a time at a later date???
+
+**  possible file extensions specific for this program --
+    *.cmc: campaign manager campaign file
+    *.cme: campaign manager equipment and items file
+    *.cmt: campaign manager treasure file
+    *.cml: campaign manager locale file
+    *.pcg: pcgen character file
+    *.cmp: campaign manager party file
+    *.pcc: pcgen campaign info file
+    *.lst: pcgen file format for all user editable data and various standard book datasets
+    various locations that call for an image shall use bmp, jpg, or png formats only
+
+
+
+
+
+
+still left to do for gui layout
+
+locales
+encounters
+treasure
+items
+maps
+
+
+once these tabs are finished then set up menubar
+
+after menubar add IDs to ALL fields to enable functionality
+
+determine how to link given fields to pcgen client for things such as character creation/mod, monster creation/mod
+
+work on file extensions for campaign manager, will actually be a specifically named txt file
+
+print function needs to be available in every tab and heading
+    submenu under Edit -- print:
+        print lists
+        print stat information for every place
+        print characters and monsters
+        print maps, maybe to scale of actual image size or to scale for standard paper size or choose
+

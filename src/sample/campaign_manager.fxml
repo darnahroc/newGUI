@@ -1,0 +1,1080 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="695.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <MenuBar>
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <TabPane prefHeight="760.0" prefWidth="940.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab closable="false" text="Campaign">
+                    <content>
+                        <AnchorPane>
+                            <children>
+                                <TabPane layoutX="6.0" layoutY="8.0" prefHeight="314.0" prefWidth="600.0" side="LEFT" tabClosingPolicy="UNAVAILABLE" tabMinHeight="0.5" tabMinWidth="1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <tabs>
+                                        <Tab closable="false" text="Story">
+                                            <content>
+                                                <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="249.0" prefWidth="399.0">
+                                       <children>
+                                          <TabPane prefHeight="600.0" prefWidth="1154.0" side="BOTTOM" tabClosingPolicy="UNAVAILABLE">
+                                             <tabs>
+                                                <Tab text="Story Arcs">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <SplitPane dividerPositions="0.29797979797979796" prefHeight="561.0" prefWidth="1154.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                              <items>
+                                                                <AnchorPane maxWidth="200.0" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                                     <children>
+                                                                        <ListView layoutX="-8.0" layoutY="127.0" prefHeight="559.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                                     <children>
+                                                                        <Label layoutX="15.0" layoutY="60.0" text="Story Body" />
+                                                                        <Label layoutX="15.0" layoutY="20.0" text="Story Title" />
+                                                                        <TextArea layoutX="105.0" layoutY="60.0" prefHeight="432.0" prefWidth="788.0" style="-fx-wrap-text: true;" text="Save story arc button adds story to list in first pane...&#10;&#10;reset story empties both fields here...&#10;&#10;import from file allows user to import a story from a txt file or other file format supported... txt, rtf, doc, etc....&#10;&#10;Arc Complete tick designates specific story arc has been completed by the party... maybe keep the arc for use later or as inspiration????&#10;&#10;Delete button deletes currently selected story arc both from this screen and the list in list pane&#10;&#10;" />
+                                                                        <TextField layoutX="105.0" layoutY="15.0" prefWidth="460.0" />
+                                                                        <Button layoutX="737.0" layoutY="510.0" mnemonicParsing="false" text="Import from txt file..." />
+                                                                        <Button layoutX="632.0" layoutY="510.0" mnemonicParsing="false" text="Reset Story" />
+                                                                        <Button layoutX="15.0" layoutY="510.0" mnemonicParsing="false" text="Save Story Arc" />
+                                                                        <Button layoutX="138.0" layoutY="510.0" mnemonicParsing="false" text="Delete Story Arc" />
+                                                                        <CheckBox layoutX="774.0" layoutY="20.0" mnemonicParsing="false" text="Arc Complete" />
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                              </items>
+                                                            </SplitPane>
+                                                         </children></AnchorPane>
+                                                   </content>
+                                                </Tab>
+                                                <Tab text="Random Prompts">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <SplitPane dividerPositions="0.17708333333333334" layoutX="89.0" layoutY="51.0" prefHeight="561.0" prefWidth="1154.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                              <items>
+                                                                <AnchorPane maxWidth="155.0" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="130.0">
+                                                                     <children>
+                                                                        <Button layoutX="15.0" layoutY="15.0" mnemonicParsing="false" text="Random Prompt" />
+                                                                        <Button layoutX="15.0" layoutY="55.0" mnemonicParsing="false" text="Copy to List" />
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                                     <children>
+                                                                        <TextArea layoutX="6.0" prefHeight="559.0" prefWidth="944.0" style="-fx-wrap-text: true;" text="random prompt button generates a random story arc prompt here which is editable to allow user to modify it before adding it into a new story arc. &#10;&#10;once editing is complete or decided not needed pressing the copy to story button automatically adds it to the new story arc tab and switches tabs...&#10;&#10;first line of story must be the story title and file format this saves in will look for header &lt;title&gt; &lt;/title&gt;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                              </items>
+                                                            </SplitPane>
+                                                         </children></AnchorPane>
+                                                   </content>
+                                                </Tab>
+                                             </tabs>
+                                          </TabPane>
+                                       </children></AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab closable="false" text="Quests">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TabPane layoutX="132.0" layoutY="207.0" prefHeight="601.0" prefWidth="1160.0" side="BOTTOM" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <tabs>
+                                              <Tab text="Active">
+                                                <content>
+                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <SplitPane dividerPositions="0.29797979797979796" layoutX="131.0" layoutY="225.0" prefHeight="552.0" prefWidth="1150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                              <items>
+                                                                <AnchorPane maxWidth="250.0" minHeight="0.0" minWidth="50.0" prefHeight="160.0" prefWidth="200.0">
+                                                                     <children>
+                                                                        <ListView layoutX="38.0" layoutY="113.0" prefHeight="550.0" prefWidth="338.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                                     <children>
+                                                                        <TextArea layoutX="15.0" layoutY="60.0" prefHeight="452.0" prefWidth="719.0" style="-fx-wrap-text: true;" text="new quest button displays dialog box to add new quest in side pane&#10;&#10;delete button prompts &quot;are you sure you want to delete this quest?&quot; with delete or cancel needing to be clicked before deleting selected quest." />
+                                                                        <Button layoutX="749.0" layoutY="15.0" mnemonicParsing="false" text="New Quest" />
+                                                                        <Button layoutX="749.0" layoutY="60.0" mnemonicParsing="false" text="Delete Quest" />
+                                                                        <Button layoutX="749.0" layoutY="105.0" mnemonicParsing="false" text="Deactivate Quest" />
+                                                                        <TextField layoutX="15.0" layoutY="15.0" prefHeight="31.0" prefWidth="651.0" promptText="quest title" />
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                              </items>
+                                                            </SplitPane>
+                                                         </children>
+                                                      </AnchorPane>
+                                                </content>
+                                              </Tab>
+                                              <Tab text="Inactive">
+                                                <content>
+                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <SplitPane dividerPositions="0.29797979797979796" prefHeight="570.0" prefWidth="1168.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                               <items>
+                                                                  <AnchorPane maxWidth="250.0" minHeight="0.0" minWidth="50.0" prefHeight="160.0" prefWidth="200.0">
+                                                                     <children>
+                                                                        <ListView layoutX="38.0" layoutY="113.0" prefHeight="550.0" prefWidth="338.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                                     <children>
+                                                                        <TextArea layoutX="15.0" layoutY="60.0" prefHeight="452.0" prefWidth="719.0" style="-fx-wrap-text: true;" text="new quest button displays dialog box to add new quest in side pane&#10;&#10;delete button prompts &quot;are you sure you want to delete this quest?&quot; with delete or cancel needing to be clicked before deleting selected quest." />
+                                                                        <Button layoutX="749.0" layoutY="15.0" mnemonicParsing="false" text="New Quest" />
+                                                                        <Button layoutX="749.0" layoutY="60.0" mnemonicParsing="false" text="Delete Quest" />
+                                                                        <Button layoutX="749.0" layoutY="105.0" mnemonicParsing="false" text="Activate Quest" />
+                                                                        <TextField layoutX="15.0" layoutY="15.0" prefHeight="31.0" prefWidth="651.0" promptText="quest title" />
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                               </items>
+                                                            </SplitPane>
+                                                         </children>
+                                                      </AnchorPane>
+                                                </content>
+                                              </Tab>
+                                                <Tab text="Completed">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <SplitPane dividerPositions="0.29797979797979796" prefHeight="570.0" prefWidth="1168.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                               <items>
+                                                                  <AnchorPane maxWidth="250.0" minHeight="0.0" minWidth="50.0" prefHeight="160.0" prefWidth="200.0">
+                                                                     <children>
+                                                                        <ListView layoutX="38.0" layoutY="113.0" prefHeight="550.0" prefWidth="338.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                                     <children>
+                                                                        <TextArea layoutX="15.0" layoutY="60.0" prefHeight="452.0" prefWidth="719.0" style="-fx-wrap-text: true;" text="delete button prompts &quot;are you sure you want to delete this quest?&quot; with delete or cancel needing to be clicked before deleting selected quest." />
+                                                                        <Button layoutX="749.0" layoutY="15.0" mnemonicParsing="false" text="Delete Quest" />
+                                                                        <TextField layoutX="15.0" layoutY="15.0" prefHeight="31.0" prefWidth="651.0" promptText="quest title" />
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                               </items>
+                                                            </SplitPane>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </Tab>
+                                                <Tab text="Random">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <TextArea layoutX="15.0" layoutY="60.0" prefHeight="476.0" prefWidth="1038.0" style="-fx-wrap-text: true;" />
+                                                            <TextField layoutX="15.0" layoutY="15.0" prefHeight="31.0" prefWidth="680.0" />
+                                                            <Button layoutX="705.0" layoutY="15.0" mnemonicParsing="false" text="Random Quest" />
+                                                            <Button layoutX="928.0" layoutY="15.0" mnemonicParsing="false" text="Add Inactive" />
+                                                            <Button layoutX="830.0" layoutY="15.0" mnemonicParsing="false" text="Add Active" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </Tab>
+                                            </tabs>
+                                          </TabPane>
+                                       </children></AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab closable="false" text="Factions">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <SplitPane dividerPositions="0.29797979797979796" layoutX="244.0" layoutY="225.0" prefHeight="609.0" prefWidth="1168.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <items>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                   <children>
+                                                      <ListView layoutX="35.0" layoutY="75.0" prefHeight="607.0" prefWidth="343.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                   <children>
+                                                      <TextField layoutX="99.0" layoutY="15.0" prefHeight="31.0" prefWidth="220.0" />
+                                                      <TextField layoutX="99.0" layoutY="56.0" prefHeight="31.0" prefWidth="220.0" />
+                                                      <TextField layoutX="99.0" layoutY="97.0" prefHeight="31.0" prefWidth="220.0" />
+                                                      <TextField layoutX="546.0" layoutY="56.0" prefHeight="31.0" prefWidth="220.0" />
+                                                      <TextField layoutX="546.0" layoutY="97.0" prefHeight="31.0" prefWidth="220.0" />
+                                                      <Button layoutX="630.0" layoutY="191.0" mnemonicParsing="false" text="Add Faction" />
+                                                      <Button layoutX="630.0" layoutY="236.0" mnemonicParsing="false" text="Modify Faction" />
+                                                      <Button layoutX="630.0" layoutY="282.0" mnemonicParsing="false" text="Delete Faction" />
+                                                      <TextArea layoutX="15.0" layoutY="191.0" prefHeight="400.0" prefWidth="600.0" text="add factions adds new faction to list in first pane&#10;modify faction allows changes to be made to faction currently selected from first pane&#10;delete faction deletes faction from current list and associated files&#10;&#10;faction type designates whether criminal, govt, labor, merchant, magic, or other.&#10;members field is numeric only and states the amount of known members in a faction.&#10;&#10;&#10;factions to be displayed here must have all of this information in its description... this can be handled both thru specific files (ie: *.cmf) or entered here. this format must be followed.....&#10;&#10;&#10;faction name&#10;faction purpose&#10;member types&#10;faction symbol description&#10;faction symbol colors&#10;core principles&#10;leadership structure&#10;how are the leaders chosen&#10;number of members&#10;faction age&#10;secret or public&#10;public impression (fame/infamy)&#10;relationship to local govt&#10;regoinal influence&#10;resources controlled&#10;centralized/decentralized&#10;how to join&#10;initiation process&#10;rivals&#10;diety association" wrapText="true" />
+                                                      <ImageView fitHeight="135.0" fitWidth="135.0" layoutX="630.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true" />
+                                                      <Label layoutX="15.0" layoutY="20.0" text="Faction" />
+                                                      <Label layoutX="15.0" layoutY="61.0" text="Alignment" />
+                                                      <Label layoutX="15.0" layoutY="102.0" text="Location" />
+                                                      <Label layoutX="459.0" layoutY="20.0" text="Type" />
+                                                      <Label layoutX="459.0" layoutY="61.0" text="Leadership" />
+                                                      <Label layoutX="459.0" layoutY="102.0" text="Members" />
+                                                      <Label layoutX="657.0" layoutY="570.0" text="Faction Icon" />
+                                                      <ChoiceBox layoutX="546.0" layoutY="15.0" prefHeight="31.0" prefWidth="220.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                            </items>
+                                          </SplitPane>
+                                       </children></AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab closable="false" text="Gov'ts">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <SplitPane dividerPositions="0.29797979797979796" prefHeight="609.0" prefWidth="1168.0">
+                                             <items>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                   <children>
+                                                      <ListView layoutX="35.0" layoutY="75.0" prefHeight="607.0" prefWidth="343.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                   <children>
+                                                      <TextField layoutX="113.0" layoutY="15.0" prefHeight="31.0" prefWidth="220.0" />
+                                                      <TextField layoutX="113.0" layoutY="56.0" prefHeight="31.0" prefWidth="220.0" />
+                                                      <TextField layoutX="113.0" layoutY="97.0" prefHeight="31.0" prefWidth="220.0" />
+                                                      <TextField layoutX="546.0" layoutY="56.0" prefHeight="31.0" prefWidth="220.0" />
+                                                      <TextField layoutX="546.0" layoutY="97.0" prefHeight="31.0" prefWidth="220.0" />
+                                                      <Button layoutX="630.0" layoutY="191.0" mnemonicParsing="false" text="Add Government" />
+                                                      <Button layoutX="630.0" layoutY="236.0" mnemonicParsing="false" text="Modify Government" />
+                                                      <Button layoutX="630.0" layoutY="282.0" mnemonicParsing="false" text="Delete Government" />
+                                                      <TextArea layoutX="15.0" layoutY="191.0" prefHeight="400.0" prefWidth="600.0" text="government type designates: matriarchy, patriarchy, democracy, tyranny, oligarchy, anarchy, commonwealth, republic, unknown, feudal, none, or other.&#10;&#10;buttons modeled after factions buttons.&#10;&#10;entries should be similar in design, input and layout of factions headings." wrapText="true" />
+                                                      <ImageView fitHeight="135.0" fitWidth="135.0" layoutX="630.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true" />
+                                                      <Label layoutX="15.0" layoutY="20.0" text="Government" />
+                                                      <Label layoutX="15.0" layoutY="61.0" text="Alignment" />
+                                                      <Label layoutX="15.0" layoutY="102.0" text="Location" />
+                                                      <Label layoutX="459.0" layoutY="20.0" text="Type" />
+                                                      <Label layoutX="459.0" layoutY="61.0" text="Leadership" />
+                                                      <Label layoutX="459.0" layoutY="102.0" text="Members" />
+                                                      <Label layoutX="683.0" layoutY="570.0" text="Flag" />
+                                                      <ChoiceBox layoutX="546.0" layoutY="15.0" prefHeight="31.0" prefWidth="220.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </items>
+                                          </SplitPane>
+                                       </children></AnchorPane>
+                                            </content>
+                                        </Tab>
+                              <Tab closable="false" text="Religions">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <SplitPane dividerPositions="0.29797979797979796" prefHeight="609.0" prefWidth="1168.0">
+                                             <items>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                   <children>
+                                                      <ListView layoutX="35.0" layoutY="75.0" prefHeight="607.0" prefWidth="343.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                   <children>
+                                                      <TextField layoutX="99.0" layoutY="15.0" prefHeight="31.0" prefWidth="220.0" />
+                                                      <TextField layoutX="99.0" layoutY="56.0" prefHeight="31.0" prefWidth="220.0" />
+                                                      <TextField layoutX="99.0" layoutY="97.0" prefHeight="31.0" prefWidth="220.0" />
+                                                      <TextField layoutX="546.0" layoutY="97.0" prefHeight="31.0" prefWidth="220.0" />
+                                                      <Button layoutX="630.0" layoutY="191.0" mnemonicParsing="false" text="Add Religion" />
+                                                      <Button layoutX="630.0" layoutY="236.0" mnemonicParsing="false" text="Modify Religion" />
+                                                      <Button layoutX="630.0" layoutY="282.0" mnemonicParsing="false" text="Delete Religion" />
+                                                      <TextArea layoutX="15.0" layoutY="191.0" prefHeight="400.0" prefWidth="600.0" text="type denotes: monotheistic, polytheistic, spiritual, none, unknown, other, war, scientific.&#10;&#10;buttons sames as factions&#10;&#10;leadership denotes name of clergy in faith: priest/priestess, mother/father, wanderer, lord/lady, brother/sister, shaman, servant, maiden, high priest/priestess, arbiter, none, unknown, other." wrapText="true" />
+                                                      <ImageView fitHeight="135.0" fitWidth="135.0" layoutX="630.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true" />
+                                                      <Label layoutX="15.0" layoutY="20.0" text="Religion" />
+                                                      <Label layoutX="15.0" layoutY="61.0" text="Alignment" />
+                                                      <Label layoutX="15.0" layoutY="102.0" text="Location" />
+                                                      <Label layoutX="459.0" layoutY="20.0" text="Type" />
+                                                      <Label layoutX="459.0" layoutY="61.0" text="Leadership" />
+                                                      <Label layoutX="459.0" layoutY="102.0" text="Members" />
+                                                      <Label layoutX="657.0" layoutY="570.0" text="Faction Icon" />
+                                                      <ChoiceBox layoutX="546.0" layoutY="15.0" prefHeight="31.0" prefWidth="220.0" />
+                                                      <ChoiceBox layoutX="546.0" layoutY="56.0" prefHeight="31.0" prefWidth="220.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </items>
+                                          </SplitPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                                        <Tab closable="false" text="Notes">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <SplitPane dividerPositions="0.29797979797979796" layoutX="308.0" layoutY="163.0" prefHeight="609.0" prefWidth="1168.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <items>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                   <children>
+                                                      <ListView layoutX="-19.0" layoutY="80.0" prefHeight="607.0" prefWidth="343.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                   <children>
+                                                      <TextArea layoutX="15.0" layoutY="61.0" prefHeight="525.0" prefWidth="740.0" />
+                                                      <TextField layoutX="15.0" layoutY="15.0" />
+                                                      <Label layoutX="217.0" layoutY="20.0" text="Label" />
+                                                      <Button layoutX="457.0" layoutY="15.0" mnemonicParsing="false" text="Add Note" />
+                                                      <Button layoutX="655.0" layoutY="15.0" mnemonicParsing="false" text="Delete Note" />
+                                                      <Button layoutX="557.0" layoutY="15.0" mnemonicParsing="false" text="Edit Note" />
+                                                   </children>
+                                                </AnchorPane>
+                                            </items>
+                                          </SplitPane>
+                                       </children></AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab closable="false" text="One Shot Generator">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextArea layoutX="15.0" layoutY="15.0" prefHeight="592.0" prefWidth="961.0" text="one shot button generates a one shot adventure in this window...&#10;&#10;print to file button generates a popup dialog for a location to save the adventure to... is saved in cmo file type... this type is editable via regular text editor&#10;&#10;send to printer button sends the adventure to the users printer..." wrapText="true" />
+                                          <Button layoutX="988.0" layoutY="15.0" mnemonicParsing="false" text="One Shot, GO!!" />
+                                          <Button layoutX="988.0" layoutY="61.0" mnemonicParsing="false" text="Print to File..." />
+                                          <Button layoutX="988.0" layoutY="107.0" mnemonicParsing="false" text="Send to Printer..." />
+                                       </children></AnchorPane>
+                                            </content>
+                                        </Tab>
+                                    </tabs>
+                                    <opaqueInsets>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </opaqueInsets>
+                                </TabPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab closable="false" text="Characters">
+                    <content>
+                        <AnchorPane>
+                            <children>
+                                <TabPane layoutX="6.0" layoutY="8.0" prefHeight="314.0" prefWidth="600.0" side="LEFT" tabClosingPolicy="UNAVAILABLE" tabMinHeight="0.5" tabMinWidth="1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <opaqueInsets>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </opaqueInsets>
+                                    <tabs>
+                                        <Tab text="PCs">
+                                            <content>
+                                                <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="249.0" prefWidth="399.0">
+                                       <children>
+                                          <SplitPane dividerPositions="0.29797979797979796" layoutX="244.0" layoutY="160.0" prefHeight="609.0" prefWidth="1168.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <items>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                   <children>
+                                                      <ListView layoutX="46.0" layoutY="174.0" prefHeight="607.0" prefWidth="343.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                   <children>
+                                                      <Label layoutX="15.0" layoutY="60.0" text="Name" />
+                                                      <Label layoutX="329.0" layoutY="20.0" text="Level(s)" />
+                                                      <Label layoutX="17.0" layoutY="100.0" text="Race" />
+                                                      <Label layoutX="15.0" layoutY="20.0" text="Player" />
+                                                      <Label layoutX="329.0" layoutY="60.0" text="XP" />
+                                                      <Label layoutX="14.0" layoutY="222.0" text="Stats:" />
+                                                      <Label layoutX="34.0" layoutY="333.0" text="CON" />
+                                                      <Label layoutX="34.0" layoutY="251.0" text="STR" />
+                                                      <Label layoutX="34.0" layoutY="374.0" text="INT" />
+                                                      <Label layoutX="329.0" layoutY="100.0" text="Wealth" />
+                                                      <Label layoutX="34.0" layoutY="456.0" text="CHA" />
+                                                      <Label layoutX="16.0" layoutY="140.0" prefHeight="15.0" prefWidth="34.0" text="Class" />
+                                                      <Label layoutX="34.0" layoutY="415.0" text="WIS" />
+                                                      <Label layoutX="34.0" layoutY="292.0" text="DEX" />
+                                                      <Label layoutX="651.0" layoutY="220.0" text="Player Portrait" />
+                                                      <Label layoutX="201.0" layoutY="251.0" text="Age" />
+                                                      <TextField layoutX="95.0" layoutY="56.0" />
+                                                      <TextField layoutX="95.0" layoutY="96.0" />
+                                                      <TextField layoutX="95.0" layoutY="137.0" />
+                                                      <TextField layoutX="74.0" layoutY="246.0" prefHeight="31.0" prefWidth="40.0" />
+                                                      <TextField layoutX="74.0" layoutY="287.0" prefHeight="31.0" prefWidth="40.0" />
+                                                      <TextField layoutX="74.0" layoutY="328.0" prefHeight="31.0" prefWidth="40.0" />
+                                                      <TextField layoutX="74.0" layoutY="369.0" prefHeight="31.0" prefWidth="40.0" />
+                                                      <TextField layoutX="74.0" layoutY="410.0" prefHeight="31.0" prefWidth="40.0" />
+                                                      <TextField layoutX="74.0" layoutY="451.0" prefHeight="31.0" prefWidth="40.0" />
+                                                      <TextField layoutX="393.0" layoutY="15.0" />
+                                                      <TextField layoutX="393.0" layoutY="56.0" />
+                                                      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="600.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+                                                      <TextField layoutX="393.0" layoutY="96.0" />
+                                                      <TextField layoutX="95.0" layoutY="15.0" />
+                                                      <Label layoutX="201.0" layoutY="292.0" text="Size" />
+                                                      <Label layoutX="15.0" layoutY="180.0" text="Alignment" />
+                                                      <TextField layoutX="268.0" layoutY="246.0" prefHeight="31.0" prefWidth="50.0" />
+                                                      <TextField layoutX="268.0" layoutY="287.0" prefHeight="31.0" prefWidth="50.0" />
+                                                      <TextField layoutX="95.0" layoutY="178.0" />
+                                                      <Button layoutX="15.0" layoutY="549.0" mnemonicParsing="false" text="Add PC" />
+                                                      <Button layoutX="95.0" layoutY="549.0" mnemonicParsing="false" text="Modify PC" />
+                                                      <Button layoutX="194.0" layoutY="549.0" mnemonicParsing="false" text="Delete PC" />
+                                                      <TextField layoutX="268.0" layoutY="369.0" prefHeight="31.0" prefWidth="50.0" />
+                                                      <Label layoutX="201.0" layoutY="374.0" text="Fame" />
+                                                      <Label layoutX="201.0" layoutY="333.0" text="Infamy" />
+                                                      <TextField layoutX="268.0" layoutY="328.0" prefHeight="31.0" prefWidth="50.0" />
+                                                      <TextField layoutX="393.0" layoutY="137.0" />
+                                                      <Label layoutX="329.0" layoutY="140.0" text="Party" />
+                                                      <Label layoutX="329.0" layoutY="180.0" text="Faction" />
+                                                      <TextField layoutX="393.0" layoutY="178.0" />
+                                                      <TextArea layoutX="338.0" layoutY="244.0" prefHeight="354.0" prefWidth="462.0" text="PCs will be listed in the first pane on the left&#10;&#10;selecting a PC lists all relevant information into the different boxes&#10;&#10;add PC button brings up the pcgen character creation screens and once completed adds the PC to the list on the left&#10;&#10;modify PC brins up the pcgen character creation screens and allows modification of the PC and updates the link with that PC in this list&#10;&#10;delete PC removes the PC from this list and from all files associated with it in pcgen and here" wrapText="true" />
+                                                   </children>
+                                                </AnchorPane>
+                                            </items>
+                                          </SplitPane>
+                                       </children></AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="NPCs">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <SplitPane dividerPositions="0.29797979797979796" prefHeight="609.0" prefWidth="1168.0">
+                                             <items>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                   <children>
+                                                      <ListView layoutX="46.0" layoutY="174.0" prefHeight="607.0" prefWidth="343.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                   <children>
+                                                      <Label layoutX="15.0" layoutY="60.0" text="Race" />
+                                                      <Label layoutX="329.0" layoutY="20.0" text="XP" />
+                                                      <Label layoutX="15.0" layoutY="100.0" text="Class" />
+                                                      <Label layoutX="15.0" layoutY="20.0" text="Name" />
+                                                      <Label layoutX="329.0" layoutY="60.0" text="Wealth" />
+                                                      <Label layoutX="14.0" layoutY="222.0" text="Stats:" />
+                                                      <Label layoutX="34.0" layoutY="333.0" text="CON" />
+                                                      <Label layoutX="34.0" layoutY="251.0" text="STR" />
+                                                      <Label layoutX="34.0" layoutY="374.0" text="INT" />
+                                                      <Label layoutX="329.0" layoutY="100.0" text="Faction" />
+                                                      <Label layoutX="34.0" layoutY="456.0" text="CHA" />
+                                                      <Label layoutX="15.0" layoutY="140.0" prefHeight="21.0" prefWidth="50.0" text="Level(s)" />
+                                                      <Label layoutX="34.0" layoutY="415.0" text="WIS" />
+                                                      <Label layoutX="34.0" layoutY="292.0" text="DEX" />
+                                                      <Label layoutX="651.0" layoutY="175.0" text="Player Portrait" />
+                                                      <Label layoutX="329.0" layoutY="140.0" text="Age" />
+                                                      <TextField layoutX="70.0" layoutY="56.0" />
+                                                      <TextField layoutX="70.0" layoutY="96.0" />
+                                                      <TextField layoutX="70.0" layoutY="137.0" />
+                                                      <TextField layoutX="74.0" layoutY="246.0" prefHeight="31.0" prefWidth="40.0" />
+                                                      <TextField layoutX="74.0" layoutY="287.0" prefHeight="31.0" prefWidth="40.0" />
+                                                      <TextField layoutX="74.0" layoutY="328.0" prefHeight="31.0" prefWidth="40.0" />
+                                                      <TextField layoutX="74.0" layoutY="369.0" prefHeight="31.0" prefWidth="40.0" />
+                                                      <TextField layoutX="74.0" layoutY="410.0" prefHeight="31.0" prefWidth="40.0" />
+                                                      <TextField layoutX="74.0" layoutY="451.0" prefHeight="31.0" prefWidth="40.0" />
+                                                      <TextField layoutX="393.0" layoutY="15.0" />
+                                                      <TextField layoutX="393.0" layoutY="56.0" />
+                                                      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="600.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+                                                      <TextField layoutX="70.0" layoutY="15.0" />
+                                                      <Label layoutX="453.0" layoutY="140.0" text="Size" />
+                                                      <Label layoutX="15.0" layoutY="180.0" text="M.Lvls" />
+                                                      <TextField layoutX="393.0" layoutY="137.0" prefHeight="31.0" prefWidth="50.0" />
+                                                      <TextField layoutX="490.0" layoutY="137.0" prefHeight="31.0" prefWidth="50.0" />
+                                                      <TextField layoutX="70.0" layoutY="177.0" />
+                                                      <TextArea layoutX="129.0" layoutY="246.0" prefHeight="351.0" prefWidth="556.0" promptText="Notes" text="add npc opens a dialog box to create a new npc&#10;&#10;modify npc opens a dialog box to modify a selected npc&#10;&#10;delete npc deletes selected npc&#10;&#10;both add and modify tie into pcgen character files and are modified thru that client&#10;&#10;all PCs, NPCs, and Monsters are creatable and modifiable via the pcgen creation client&#10;&#10;need to figure out how to tie this into that client&#10;&#10;selecting 'is actor' automatically adds entry into actor list in first pane&#10;&#10;selecting 'in party' adds npc to list of characters in current party" wrapText="true" />
+                                                      <Button layoutX="695.0" layoutY="246.0" mnemonicParsing="false" text="Add NPC" />
+                                                      <Button layoutX="695.0" layoutY="287.0" mnemonicParsing="false" text="Modify NPC" />
+                                                      <Button layoutX="695.0" layoutY="328.0" mnemonicParsing="false" text="Delete NPC" />
+                                                      <CheckBox layoutX="393.0" layoutY="177.0" mnemonicParsing="false" text="In Party" />
+                                                      <CheckBox layoutX="490.0" layoutY="180.0" mnemonicParsing="false" text="Is Actor" />
+                                                      <ChoiceBox layoutX="393.0" layoutY="96.0" prefWidth="187.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </items>
+                                          </SplitPane>
+                                       </children></AnchorPane>
+                                            </content>
+                                        </Tab>
+                              <Tab text="Party">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <ListView layoutX="15.0" layoutY="46.0" prefHeight="410.0" prefWidth="300.0" />
+                                          <Label layoutX="15.0" layoutY="15.0" text="Party Members" />
+                                          <TextArea layoutX="325.0" layoutY="46.0" prefHeight="550.0" prefWidth="650.0" text="party memebers are listed on the left&#10;&#10;deceased but resurrectable are notated by the tick mark above&#10;&#10;remove character button removes the selected character from the party box&#10;&#10;npc party members are notated by the tick mark above&#10;&#10;actor party members are notated by the tick mark above" />
+                                          <Label layoutX="325.0" layoutY="15.0" text="Character" />
+                                          <CheckBox layoutX="882.0" layoutY="15.0" mnemonicParsing="false" text="Deceased" />
+                                          <Button layoutX="989.0" layoutY="46.0" mnemonicParsing="false" text="Remove Character" />
+                                          <CheckBox layoutX="807.0" layoutY="15.0" mnemonicParsing="false" text="Actor" />
+                                          <CheckBox layoutX="737.0" layoutY="15.0" mnemonicParsing="false" text="NPC" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                                        <Tab text="Actors">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <SplitPane dividerPositions="0.29797979797979796" prefHeight="609.0" prefWidth="1168.0">
+                                             <items>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                   <children>
+                                                      <ListView layoutX="46.0" layoutY="174.0" prefHeight="607.0" prefWidth="343.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                   <children>
+                                                      <Label layoutX="15.0" layoutY="60.0" text="Race" />
+                                                      <Label layoutX="329.0" layoutY="20.0" text="XP" />
+                                                      <Label layoutX="15.0" layoutY="100.0" text="Class" />
+                                                      <Label layoutX="15.0" layoutY="20.0" text="Name" />
+                                                      <Label layoutX="329.0" layoutY="60.0" text="Wealth" />
+                                                      <Label layoutX="329.0" layoutY="100.0" text="Faction" />
+                                                      <Label layoutX="15.0" layoutY="140.0" prefHeight="21.0" prefWidth="50.0" text="Faction" />
+                                                      <Label layoutX="651.0" layoutY="180.0" text="Player Portrait" />
+                                                      <Label layoutX="329.0" layoutY="140.0" text="Age" />
+                                                      <TextField layoutX="80.0" layoutY="56.0" />
+                                                      <TextField layoutX="80.0" layoutY="96.0" />
+                                                      <TextField layoutX="80.0" layoutY="137.0" />
+                                                      <TextField layoutX="393.0" layoutY="15.0" />
+                                                      <TextField layoutX="393.0" layoutY="56.0" />
+                                                      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="600.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+                                                      <TextField layoutX="80.0" layoutY="15.0" />
+                                                      <Label layoutX="453.0" layoutY="140.0" text="Size" />
+                                                      <Label layoutX="15.0" layoutY="180.0" text="Location" />
+                                                      <TextField layoutX="393.0" layoutY="137.0" prefHeight="31.0" prefWidth="50.0" />
+                                                      <TextField layoutX="490.0" layoutY="137.0" prefHeight="31.0" prefWidth="50.0" />
+                                                      <TextField layoutX="80.0" layoutY="177.0" />
+                                                      <TextArea layoutX="15.0" layoutY="246.0" prefHeight="350.0" prefWidth="670.0" promptText="Notes" text="buttons work the same as buttons for PCs and NPCs, same with in party checkbox&#10;&#10;faction is a selection box and options are tied into a seperate file??&#10;&#10;all actors listed in first pane&#10;" />
+                                                      <Button layoutX="695.0" layoutY="246.0" mnemonicParsing="false" text="Add Actor" />
+                                                      <Button layoutX="695.0" layoutY="288.0" mnemonicParsing="false" text="Modify Actor" />
+                                                      <Button layoutX="695.0" layoutY="328.0" mnemonicParsing="false" text="Delete Actor" />
+                                                      <CheckBox layoutX="393.0" layoutY="180.0" mnemonicParsing="false" text="In Party" />
+                                                      <ChoiceBox layoutX="393.0" layoutY="96.0" prefWidth="187.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </items>
+                                          </SplitPane>
+                                       </children></AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Monsters">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <SplitPane dividerPositions="0.29797979797979796" layoutX="236.0" layoutY="244.0" prefHeight="609.0" prefWidth="1168.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <items>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                   <children>
+                                                      <TreeView layoutX="21.0" layoutY="126.0" prefHeight="607.0" prefWidth="343.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                   <children>
+                                                      <TextArea prefHeight="607.0" prefWidth="660.0" text="monster stat block displayed here&#10;&#10;monster list in tree format broken into alphabetical, then creature type format&#10;&#10;add monster button adds current monster to new or current encounter list&#10;&#10;create monster button allows the creation of a completely new monster, brings up monster creation dialog box&#10;&#10;modify monster brings up a dialog box with the selected monsters stats and allows modification, saving creates a new monster entry into the list in the first pane.&#10;&#10;delete monster button allows for only custom created monsters to be deleted from the list&#10;&#10;remove monster button allows specific monsters to be removed from the list only under this loaded campaign file.... this all needs to be tied into pcgens files, campaign, character, party, etc...&#10;" wrapText="true" />
+                                                      <Button layoutX="670.0" layoutY="15.0" mnemonicParsing="false" text="Add Monster" />
+                                                      <Button layoutX="670.0" layoutY="97.0" mnemonicParsing="false" text="Modify Monster" />
+                                                      <Button layoutX="670.0" layoutY="138.0" mnemonicParsing="false" text="Delete Monster" />
+                                                      <Button layoutX="670.0" layoutY="56.0" mnemonicParsing="false" text="Create Monster" />
+                                                      <Button layoutX="670.0" layoutY="179.0" mnemonicParsing="false" text="Remove Monster" />
+                                                   </children>
+                                                </AnchorPane>
+                                            </items>
+                                          </SplitPane>
+                                       </children></AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Random NPC">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextArea layoutX="15.0" layoutY="15.0" prefHeight="580.0" prefWidth="870.0" text="dropdown list includes npc types: NPC, Actor, Shopkeep, blacksmith, innkeep, hosteler, all common npc classes, clergy, alchemist, engineer, laborer, henchman, prostitute, noble, elite, guardsmen, caravaner, members off all professions, etc&#10;&#10;common npc classes will only be listed as commoner&#10;&#10;professions will be listed as professional&#10;&#10;this list is not complete and can be modified and added to over time.&#10;&#10;npc stat block will be displayed here but may only be copied not edited&#10;&#10;add to list button adds npc to NPCs list pane&#10;&#10;actors generated here go into Actors list pane&#10;" wrapText="true" />
+                                          <Button layoutX="938.0" layoutY="437.0" mnemonicParsing="false" text="Generate NPC" />
+                                          <ImageView fitHeight="255.0" fitWidth="255.0" layoutX="895.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+                                          <Label layoutX="979.0" layoutY="280.0" text="NPC Portrait" />
+                                          <ChoiceBox layoutX="895.0" layoutY="396.0" prefWidth="200.0" />
+                                          <Button layoutX="949.0" layoutY="478.0" mnemonicParsing="false" text="Add to List" />
+                                       </children></AnchorPane>
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Random Monster">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextArea layoutX="15.0" layoutY="15.0" prefHeight="580.0" prefWidth="870.0" text="dropdown box is a list of CRs&#10;&#10;monster stat block will be displayed here but may only be copied from this window&#10;&#10;add to encounter button adds generated monster to encounter list pane&#10;&#10;" />
+                                          <ChoiceBox layoutX="963.0" layoutY="426.0" prefWidth="84.0" />
+                                          <Button layoutX="963.0" layoutY="466.0" mnemonicParsing="false" text="Monster!!" />
+                                          <ImageView fitHeight="250.0" fitWidth="250.0" layoutX="895.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+                                          <Label layoutX="963.0" layoutY="275.0" text="Monster Portrait" />
+                                          <Label layoutX="963.0" layoutY="396.0" text="Monster CR" />
+                                          <Button layoutX="934.0" layoutY="507.0" mnemonicParsing="false" text="Add to Encounter" />
+                                       </children></AnchorPane>
+                                            </content>
+                                        </Tab>
+                                    </tabs>
+                                </TabPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab closable="false" text="Locales">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TabPane layoutX="8.0" layoutY="8.0" prefHeight="550.0" prefWidth="986.0" side="LEFT" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <tabs>
+                                        <Tab closable="false" text="Countries">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <ListView layoutX="15.0" layoutY="15.0" prefHeight="575.0" prefWidth="247.0" />
+                                          <TextField layoutX="282.0" layoutY="36.0" promptText="name" />
+                                          <TextField layoutX="479.0" layoutY="36.0" promptText="continent" />
+                                          <TextField layoutX="676.0" layoutY="36.0" promptText="capital" />
+                                          <TextField layoutX="282.0" layoutY="98.0" promptText="population" />
+                                          <TextField layoutX="479.0" layoutY="98.0" promptText="# settlements" />
+                                          <TextField layoutX="873.0" layoutY="36.0" promptText="total land/sea sq mi" />
+                                          <TextField layoutX="676.0" layoutY="98.0" promptText="age of regime" />
+                                          <TextField layoutX="873.0" layoutY="98.0" promptText="military power" />
+                                          <Label layoutX="676.0" layoutY="139.0" text="Avg. Religion Type" />
+                                          <Label layoutX="479.0" layoutY="139.0" text="Ruling Alignment" />
+                                          <Label layoutX="479.0" layoutY="77.0" text="No. of Settlements" />
+                                          <Label layoutX="873.0" layoutY="15.0" text="Total Area" />
+                                          <Label layoutX="676.0" layoutY="77.0" text="Regime Age" />
+                                          <Label layoutX="873.0" layoutY="77.0" text="Military Power" />
+                                          <Label layoutX="676.0" layoutY="15.0" text="Capital" />
+                                          <Label layoutX="282.0" layoutY="77.0" text="Total Pop." />
+                                          <Label layoutX="282.0" layoutY="139.0" text="Government" />
+                                          <Label layoutX="479.0" layoutY="15.0" text="Continent" />
+                                          <Label layoutX="282.0" layoutY="15.0" text="Country" />
+                                          <ChoiceBox layoutX="282.0" layoutY="160.0" prefWidth="187.0" />
+                                          <ChoiceBox layoutX="676.0" layoutY="160.0" prefWidth="187.0" />
+                                          <ChoiceBox layoutX="479.0" layoutY="160.0" prefWidth="187.0" />
+                                          <ChoiceBox layoutX="873.0" layoutY="160.0" prefWidth="187.0" />
+                                          <Label layoutX="873.0" layoutY="139.0" text="Avg. Tech Level" />
+                                          <CheckBox layoutX="419.0" layoutY="201.0" mnemonicParsing="false" scaleX="0.825" scaleY="0.825" scaleZ="0.825" text="Infantry" />
+                                          <CheckBox layoutX="560.0" layoutY="201.0" mnemonicParsing="false" scaleX="0.825" scaleY="0.825" scaleZ="0.825" text="Airforce" />
+                                          <CheckBox layoutX="489.0" layoutY="201.0" mnemonicParsing="false" scaleX="0.825" scaleY="0.825" scaleZ="0.825" text="Artillery" />
+                                          <CheckBox layoutX="632.0" layoutY="201.0" mnemonicParsing="false" scaleX="0.825" scaleY="0.825" scaleZ="0.825" text="Navy" />
+                                          <CheckBox layoutX="687.0" layoutY="201.0" mnemonicParsing="false" scaleX="0.825" scaleY="0.825" scaleZ="0.825" text="Magical" />
+                                          <CheckBox layoutX="850.0" layoutY="201.0" mnemonicParsing="false" scaleX="0.825" scaleY="0.825" scaleZ="0.825" text="Espionage" />
+                                          <CheckBox layoutX="755.0" layoutY="201.0" mnemonicParsing="false" scaleX="0.825" scaleY="0.825" scaleZ="0.825" text="Demolitions" />
+                                          <CheckBox layoutX="934.0" layoutY="201.0" mnemonicParsing="false" scaleX="0.825" scaleY="0.825" scaleZ="0.825" text="Berserkers" />
+                                          <CheckBox layoutX="513.0" layoutY="224.0" mnemonicParsing="false" scaleX="0.825" scaleY="0.825" scaleZ="0.825" text="Mercs" />
+                                          <CheckBox layoutX="416.0" layoutY="224.0" mnemonicParsing="false" scaleX="0.825" scaleY="0.825" scaleZ="0.825" text="Conscripted" />
+                                          <CheckBox layoutX="412.0" layoutY="253.0" mnemonicParsing="false" text="Civil Unrest" />
+                                          <CheckBox layoutX="282.0" layoutY="253.0" mnemonicParsing="false" text="In Contention" />
+                                          <Label layoutX="282.0" layoutY="201.0" text="Military Unit Types:" />
+                                          <TextArea layoutX="282.0" layoutY="284.0" prefHeight="306.0" prefWidth="581.0" text="countries listed in the first pane&#10;&#10;government dropdown menu: autocracy, colonial, council, dynasty, magical, military, overlord, secret syndicate, theocracy, plutocracy, monarchy, partriarchy, tribal, democracy,republic&#10;&#10;ruling alignment dropdown menu: list alignments&#10;&#10;avg religion type dropdown menu denotes the religion followed by the majority of residents living within the boundaries of the country&#10;&#10;avg tech level dropdown menu denotes the highest average tech level present in all major settlements in the country&#10;&#10;in contention tick mark denotes whether the leadership of the country is in a state of contention at the time&#10;&#10;the civil unrest tick mark denotes whether or not the country is experiencing any unrest amongst its citizens, this could be a prelude to civil war&#10;&#10;regime age denotes how long the current rulers have been in power&#10;&#10;military power denotes how much of the citizenry are enlisted in the military&#10;&#10;total area denotes how many square miles the country occupies, both continental and globally&#10;&#10;military unit types denotes what types of military units the country typically has, exact numbers for each of these will be laid out in the stat block that will be displayed in this window&#10;&#10;" wrapText="true" />
+                                          <Button layoutX="873.0" layoutY="519.0" mnemonicParsing="false" text="Add" />
+                                          <Button layoutX="873.0" layoutY="559.0" mnemonicParsing="false" text="Random" />
+                                          <Button layoutX="959.0" layoutY="559.0" mnemonicParsing="false" text="Delete" />
+                                          <Button layoutX="931.0" layoutY="519.0" mnemonicParsing="false" text="Modify" />
+                                          <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="873.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true" />
+                                          <Label layoutX="873.0" layoutY="253.0" text="Flag/Banner" />
+                                       </children></AnchorPane>
+                                            </content>
+                                        </Tab>
+                              <Tab closable="false" text="States">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <ListView layoutX="15.0" layoutY="15.0" prefHeight="575.0" prefWidth="247.0" />
+                                          <TextField layoutX="282.0" layoutY="36.0" promptText="name" />
+                                          <TextField layoutX="479.0" layoutY="36.0" promptText="continent" />
+                                          <TextField layoutX="676.0" layoutY="36.0" promptText="capital" />
+                                          <TextField layoutX="282.0" layoutY="98.0" promptText="population" />
+                                          <TextField layoutX="479.0" layoutY="98.0" promptText="# settlements" />
+                                          <TextField layoutX="873.0" layoutY="36.0" promptText="total land/sea sq mi" />
+                                          <TextField layoutX="676.0" layoutY="98.0" promptText="age of regime" />
+                                          <TextField layoutX="873.0" layoutY="98.0" promptText="military power" />
+                                          <Label layoutX="676.0" layoutY="139.0" text="Avg. Religion Type" />
+                                          <Label layoutX="479.0" layoutY="139.0" text="Ruling Alignment" />
+                                          <Label layoutX="479.0" layoutY="77.0" text="No. of Settlements" />
+                                          <Label layoutX="873.0" layoutY="15.0" text="Total Area" />
+                                          <Label layoutX="676.0" layoutY="77.0" text="Regime Age" />
+                                          <Label layoutX="873.0" layoutY="77.0" text="Military Power" />
+                                          <Label layoutX="676.0" layoutY="15.0" text="Capital" />
+                                          <Label layoutX="282.0" layoutY="77.0" text="Total Pop." />
+                                          <Label layoutX="282.0" layoutY="139.0" text="Government Type" />
+                                          <Label layoutX="479.0" layoutY="15.0" text="Country" />
+                                          <Label layoutX="282.0" layoutY="15.0" text="State" />
+                                          <ChoiceBox layoutX="282.0" layoutY="160.0" prefWidth="187.0" />
+                                          <ChoiceBox layoutX="676.0" layoutY="160.0" prefWidth="187.0" />
+                                          <ChoiceBox layoutX="479.0" layoutY="160.0" prefWidth="187.0" />
+                                          <ChoiceBox layoutX="873.0" layoutY="160.0" prefWidth="187.0" />
+                                          <Label layoutX="873.0" layoutY="139.0" text="Avg. Tech Level" />
+                                          <CheckBox layoutX="419.0" layoutY="201.0" mnemonicParsing="false" scaleX="0.825" scaleY="0.825" scaleZ="0.825" text="Infantry" />
+                                          <CheckBox layoutX="560.0" layoutY="201.0" mnemonicParsing="false" scaleX="0.825" scaleY="0.825" scaleZ="0.825" text="Airforce" />
+                                          <CheckBox layoutX="489.0" layoutY="201.0" mnemonicParsing="false" scaleX="0.825" scaleY="0.825" scaleZ="0.825" text="Artillery" />
+                                          <CheckBox layoutX="632.0" layoutY="201.0" mnemonicParsing="false" scaleX="0.825" scaleY="0.825" scaleZ="0.825" text="Navy" />
+                                          <CheckBox layoutX="687.0" layoutY="201.0" mnemonicParsing="false" scaleX="0.825" scaleY="0.825" scaleZ="0.825" text="Magical" />
+                                          <CheckBox layoutX="850.0" layoutY="201.0" mnemonicParsing="false" scaleX="0.825" scaleY="0.825" scaleZ="0.825" text="Espionage" />
+                                          <CheckBox layoutX="755.0" layoutY="201.0" mnemonicParsing="false" scaleX="0.825" scaleY="0.825" scaleZ="0.825" text="Demolitions" />
+                                          <CheckBox layoutX="934.0" layoutY="201.0" mnemonicParsing="false" scaleX="0.825" scaleY="0.825" scaleZ="0.825" text="Berserkers" />
+                                          <CheckBox layoutX="513.0" layoutY="224.0" mnemonicParsing="false" scaleX="0.825" scaleY="0.825" scaleZ="0.825" text="Mercs" />
+                                          <CheckBox layoutX="416.0" layoutY="224.0" mnemonicParsing="false" scaleX="0.825" scaleY="0.825" scaleZ="0.825" text="Conscripted" />
+                                          <CheckBox layoutX="412.0" layoutY="253.0" mnemonicParsing="false" text="Civil Unrest" />
+                                          <CheckBox layoutX="282.0" layoutY="253.0" mnemonicParsing="false" text="In Contention" />
+                                          <Label layoutX="282.0" layoutY="201.0" text="Military Unit Types:" />
+                                          <TextArea layoutX="282.0" layoutY="284.0" prefHeight="306.0" prefWidth="581.0" text="states listed in the first pane&#10;&#10;country lists the country the state is located in&#10;&#10;government dropdown menu: autocracy, colonial, council, dynasty, magical, military, overlord, secret syndicate, theocracy, plutocracy, monarchy, partriarchy, tribal, democracy,republic&#10;&#10;ruling alignment dropdown menu: list alignments&#10;&#10;avg religion type dropdown menu denotes the religion followed by the majority of residents living within the boundaries of the country&#10;&#10;avg tech level dropdown menu denotes the highest average tech level present in all major settlements in the country&#10;&#10;in contention tick mark denotes whether the leadership of the country is in a state of contention at the time&#10;&#10;the civil unrest tick mark denotes whether or not the country is experiencing any unrest amongst its citizens, this could be a prelude to civil war&#10;&#10;regime age denotes how long the current rulers have been in power&#10;&#10;military power denotes how much of the citizenry are enlisted in the military&#10;&#10;total area denotes how many square miles the country occupies, both continental and globally&#10;&#10;military unit types denotes what types of military units the country typically has, exact numbers for each of these will be laid out in the stat block that will be displayed in this window&#10;&#10;" wrapText="true" />
+                                          <Button layoutX="873.0" layoutY="519.0" mnemonicParsing="false" text="Add" />
+                                          <Button layoutX="873.0" layoutY="559.0" mnemonicParsing="false" text="Random" />
+                                          <Button layoutX="959.0" layoutY="559.0" mnemonicParsing="false" text="Delete" />
+                                          <Button layoutX="931.0" layoutY="519.0" mnemonicParsing="false" text="Modify" />
+                                          <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="873.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true" />
+                                          <Label layoutX="873.0" layoutY="253.0" text="Flag/Banner" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab closable="false" text="Cities">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <ListView layoutX="15.0" layoutY="15.0" prefHeight="575.0" prefWidth="247.0" />
+                                          <TextField layoutX="282.0" layoutY="36.0" promptText="name" />
+                                          <TextField layoutX="479.0" layoutY="36.0" promptText="continent" />
+                                          <TextField layoutX="282.0" layoutY="98.0" promptText="population" />
+                                          <TextField layoutX="479.0" layoutY="98.0" promptText="# settlements" />
+                                          <TextField layoutX="873.0" layoutY="36.0" promptText="total land/sea sq mi" />
+                                          <TextField layoutX="676.0" layoutY="98.0" promptText="age of regime" />
+                                          <Label layoutX="676.0" layoutY="139.0" text="Avg. Religion Type" />
+                                          <Label layoutX="479.0" layoutY="139.0" text="Ruling Alignment" />
+                                          <Label layoutX="479.0" layoutY="77.0" text="Base Value" />
+                                          <Label layoutX="873.0" layoutY="15.0" text="Total Area" />
+                                          <Label layoutX="676.0" layoutY="77.0" text="Spending Total" />
+                                          <Label layoutX="873.0" layoutY="77.0" text="Spellcasting Level" />
+                                          <Label layoutX="676.0" layoutY="15.0" text="City Type" />
+                                          <Label layoutX="282.0" layoutY="77.0" text="Total Pop." />
+                                          <Label layoutX="282.0" layoutY="139.0" text="Government" />
+                                          <Label layoutX="479.0" layoutY="15.0" text="State" />
+                                          <Label layoutX="282.0" layoutY="15.0" text="City" />
+                                          <ChoiceBox layoutX="282.0" layoutY="160.0" prefWidth="187.0" />
+                                          <ChoiceBox layoutX="676.0" layoutY="160.0" prefWidth="187.0" />
+                                          <ChoiceBox layoutX="479.0" layoutY="160.0" prefWidth="187.0" />
+                                          <ChoiceBox layoutX="873.0" layoutY="160.0" prefWidth="187.0" />
+                                          <Label layoutX="873.0" layoutY="139.0" text="Avg. Tech Level" />
+                                          <TextArea layoutX="282.0" layoutY="284.0" prefHeight="306.0" prefWidth="581.0" text="cities listed in the first pane&#10;&#10;state denotes what state or region the city belongs to&#10;&#10;city type denotes which type of city: thorpe, hamlet, village, small town, large town, small city, large city, metropolis, city-state, tribal grounds, shanty town, or ruins&#10;&#10;Base Value and Purchase Limit This section lists the community’s base value for available magic items in gp&#10;&#10;purchase limit is the most money a shop in the settlement can spend to purchase any single item from the PCs.&#10;&#10;Spellcasting denotes the highest level of available spells that can be cast on a for hire basis&#10;&#10;government dropdown menu: autocracy, colonial, council, dynasty, magical, military, overlord, secret syndicate, theocracy, plutocracy, monarchy, partriarchy, tribal, democracy,republic&#10;&#10;ruling alignment dropdown menu: list alignments&#10;&#10;avg religion type dropdown menu denotes the religion followed by the majority of residents living within the boundaries of the country&#10;&#10;avg tech level dropdown menu denotes the highest average tech level present in all major settlements in the country&#10;&#10;in contention tick mark denotes whether the leadership of the country is in a state of contention at the time&#10;&#10;the civil unrest tick mark denotes whether or not the country is experiencing any unrest amongst its citizens, this could be a prelude to civil war&#10;&#10;regime age denotes how long the current rulers have been in power&#10;&#10;military power denotes how much of the citizenry are enlisted in the military&#10;&#10;total area denotes how many square miles the country occupies, both continental and globally&#10;&#10;military unit types denotes what types of military units the country typically has, exact numbers for each of these will be laid out in the stat block that will be displayed in this window&#10;&#10;" wrapText="true" />
+                                          <Button layoutX="873.0" layoutY="519.0" mnemonicParsing="false" text="Add" />
+                                          <Button layoutX="873.0" layoutY="559.0" mnemonicParsing="false" text="Random" />
+                                          <Button layoutX="959.0" layoutY="559.0" mnemonicParsing="false" text="Delete" />
+                                          <Button layoutX="931.0" layoutY="519.0" mnemonicParsing="false" text="Modify" />
+                                          <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="873.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true" />
+                                          <Label layoutX="932.0" layoutY="490.0" text="Flag/Banner" />
+                                          <ChoiceBox layoutX="676.0" layoutY="36.0" prefWidth="187.0" />
+                                          <ChoiceBox layoutX="873.0" layoutY="98.0" prefWidth="187.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                                        <Tab text="Shops">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <ListView layoutX="15.0" layoutY="15.0" prefHeight="575.0" prefWidth="247.0" />
+                                          <ChoiceBox layoutX="370.0" layoutY="57.0" prefWidth="187.0" />
+                                          <Label layoutX="282.0" layoutY="61.0" text="Shop Type" />
+                                          <TextField layoutX="699.0" layoutY="15.0" />
+                                          <Label layoutX="607.0" layoutY="20.0" text="Shop Owner" />
+                                          <CheckBox layoutX="607.0" layoutY="102.0" mnemonicParsing="false" text="Fence" />
+                                          <Label layoutX="282.0" layoutY="102.0" text="Shop Value" />
+                                          <TextField layoutX="370.0" layoutY="98.0" />
+                                          <TextField layoutX="699.0" layoutY="57.0" />
+                                          <Label layoutX="607.0" layoutY="61.0" text="City/Region" />
+                                          <Label layoutX="282.0" layoutY="20.0" text="Shop Name" />
+                                          <TextField layoutX="370.0" layoutY="15.0" />
+                                          <TableView layoutX="282.0" layoutY="184.0" prefHeight="406.0" prefWidth="422.0">
+                                            <columns>
+                                              <TableColumn prefWidth="75.0" text="Item" />
+                                              <TableColumn prefWidth="75.0" text="Cost" />
+                                                <TableColumn prefWidth="75.0" text="Rarity" />
+                                            </columns>
+                                          </TableView>
+                                          <Button layoutX="594.0" layoutY="143.0" mnemonicParsing="false" text="Add Shop" />
+                                          <Button layoutX="690.0" layoutY="143.0" mnemonicParsing="false" text="Modify Shop/Inventory" />
+                                          <Button layoutX="874.0" layoutY="143.0" mnemonicParsing="false" text="Delete Shop" />
+                                          <Button layoutX="985.0" layoutY="143.0" mnemonicParsing="false" text="Create Random Shop" />
+                                          <Button layoutX="902.0" layoutY="15.0" mnemonicParsing="false" text="View Owner Stats" />
+                                          <Label layoutX="282.0" layoutY="148.0" text="Inventory" />
+                                          <CheckBox layoutX="684.0" layoutY="102.0" mnemonicParsing="false" text="Black Market" />
+                                          <CheckBox layoutX="808.0" layoutY="102.0" mnemonicParsing="false" text="Favors Party" />
+                                          <TextArea layoutX="727.0" layoutY="184.0" prefHeight="406.0" prefWidth="420.0" promptText="Shop Description" text="view owner stats button opens the shop owners npc stats in the main pcgen window&#10;&#10;shop type dropdown menu: alchemist, archery, blacksmith, bookshop, herbalist, hireling, magic, stable, tailor, tattoo parlor, repair shop, tech store, market stall, military surplus, mech parts, auto parts, car dealer, mechanic shop, mechanic supplies, florist, candy store, department store, toy store, adult store, tavern, motel, hotel, inn, restaurant, sporting goods, supermarket&#10;&#10;fence tick denotes whether shop operates as a fence for stolen goods&#10;&#10;black market tick denotes whether this shop sells black market or restricted goods&#10;&#10;favors party tick denotes whether shop owner has a favorable attitude toward the party or a member of it, this grants a 10% discount on all goods sold&#10;&#10;shop value denotes the max amout of money the shop has to purchase items from the PCs" wrapText="true" />
+                                       </children></AnchorPane>
+                                            </content>
+                                        </Tab>
+                              <Tab text="Temples">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <ListView layoutX="15.0" layoutY="15.0" prefHeight="575.0" prefWidth="247.0" />
+                                          <ChoiceBox layoutX="407.0" layoutY="58.0" prefWidth="187.0" />
+                                          <Label layoutX="282.0" layoutY="61.0" text="Temple Type" />
+                                          <TextField layoutX="699.0" layoutY="15.0" />
+                                          <Label layoutX="607.0" layoutY="20.0" text="Diety" />
+                                          <TextField layoutX="699.0" layoutY="57.0" />
+                                          <Label layoutX="607.0" layoutY="61.0" text="City/Region" />
+                                          <Label layoutX="282.0" layoutY="20.0" text="Temple Name" />
+                                          <TextField layoutX="407.0" layoutY="16.0" />
+                                          <TableView layoutX="282.0" layoutY="184.0" prefHeight="406.0" prefWidth="422.0">
+                                             <columns>
+                                                <TableColumn prefWidth="75.0" text="Item" />
+                                                <TableColumn prefWidth="75.0" text="Cost" />
+                                                <TableColumn prefWidth="75.0" text="Rarity" />
+                                             </columns>
+                                          </TableView>
+                                          <Button layoutX="544.0" layoutY="143.0" mnemonicParsing="false" text="Add Temple" />
+                                          <Button layoutX="655.0" layoutY="143.0" mnemonicParsing="false" text="Modify Temple/Services" />
+                                          <Button layoutX="844.0" layoutY="143.0" mnemonicParsing="false" text="Delete Temple" />
+                                          <Button layoutX="970.0" layoutY="143.0" mnemonicParsing="false" text="Create Random Temple" />
+                                          <Button layoutX="902.0" layoutY="15.0" mnemonicParsing="false" text="View Owner Stats" />
+                                          <Label layoutX="282.0" layoutY="148.0" text="Services/Inventory" />
+                                          <TextArea layoutX="727.0" layoutY="184.0" prefHeight="406.0" prefWidth="420.0" promptText="Shop Description" wrapText="true" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                                        <Tab text="Dungeon/Cave">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Misc">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                    </tabs>
+                                </TabPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab closable="false" text="Encounters">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TabPane layoutX="318.0" layoutY="167.0" prefHeight="600.0" prefWidth="1186.0" side="LEFT" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <tabs>
+                                        <Tab text="Create Enc.">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Random Enc.">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Traps">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Enc. Tables">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Custom Enc. Tables">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                    </tabs>
+                                </TabPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab closable="false" text="Treasure">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TabPane layoutX="214.0" layoutY="36.0" prefHeight="600.0" prefWidth="1186.0" side="LEFT" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <tabs>
+                                        <Tab text="Loot">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Locale">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Hoard">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Random">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Specific">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Tracker">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Tables">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                    </tabs>
+                                </TabPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab closable="false" text="Items">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TabPane layoutX="220.0" layoutY="117.0" prefHeight="600.0" prefWidth="1186.0" side="LEFT" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <tabs>
+                                        <Tab text="Items">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Types">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Craft Components">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Create">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Random">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Item History">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                    </tabs>
+                                </TabPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab closable="false" text="Maps?">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TabPane layoutX="182.0" layoutY="122.0" prefHeight="600.0" prefWidth="1186.0" side="LEFT" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <tabs>
+                                        <Tab text="World">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Continental/Overland">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab text="City">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Buildings">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Dungeon/Cave">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                        <Tab text="Battle Maps">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                            </content>
+                                        </Tab>
+                                    </tabs>
+                                </TabPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            <Tab closable="false" text="Misc">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane layoutX="182.0" layoutY="122.0" prefHeight="600.0" prefWidth="1186.0" side="LEFT" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <tabs>
+                              <Tab text="World">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                              <Tab text="Continental/Overland">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                              <Tab text="City">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                              <Tab text="Buildings">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                              <Tab text="Dungeon/Cave">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                              <Tab text="Battle Maps">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            </tabs>
+            <opaqueInsets>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </opaqueInsets>
+        </TabPane>
+        <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #000000;">
+            <children>
+                <Label style="-fx-border-color: #000000;" text="Status">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+    </children>
+</VBox>
